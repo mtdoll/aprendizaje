@@ -12,6 +12,7 @@ public class EjercicioMerceria {
 	//	Mas de 15, el envio es gratis.
 	
 	int cantidadPaquetes;
+	double montoTotal;
 	Scanner teclado=new Scanner(System.in);
 	
 	//	Preguntar por teclado cuantos paquetes son.
@@ -23,6 +24,10 @@ public class EjercicioMerceria {
 	  System.out.println("No estan permitidas las ventas minoristas (cantidad de paquetes menor a 5)");
 	}
 	else{
+	  System.out.println("Ingrese el monto total de la compra");
+	  teclado =new Scanner (System.in);
+	  montoTotal = teclado.nextDouble();
+	  
 	  if(cantidadPaquetes>=5&&cantidadPaquetes<=15){
 		System.out.println("El costo de envio es de 10USD");
 	  }
@@ -31,7 +36,9 @@ public class EjercicioMerceria {
 	  }
 	}
 	
-	
+	  if(montoTotal<100){
+	  System.out.println("El monto total es menor a 100");
+	  }
   }
   
 }
