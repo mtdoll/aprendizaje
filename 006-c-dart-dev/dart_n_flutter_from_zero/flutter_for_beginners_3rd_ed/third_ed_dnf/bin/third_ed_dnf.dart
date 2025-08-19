@@ -1,6 +1,6 @@
-import 'dart.io';
+// import 'dart.io';
 
-void main() {
-  String? entrada = stdin.readLineSync()!;
+// void main() {
+//   String? entrada = stdin.readLineSync()!;
   
-}
+// }
